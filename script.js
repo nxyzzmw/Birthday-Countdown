@@ -58,7 +58,7 @@ function countdown(endDate) {
   
   (function () { 
     let now = new Date();
-    now.setMinutes(now.getMinutes() - 0); // Set to 1 minute ahead of current time
+    now.setMinutes(now.getMinutes() + 1); // Set to 1 minute ahead of current time
     let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
     tomorrow.setHours(0, 0, 0, 0); // Set to 12 AM tomorrow
     countdown(tomorrow); 
