@@ -50,14 +50,14 @@ function showBirthdayMessage() {
   const message = document.createElement('div');
   message.className = 'birthday-message';
   message.innerHTML = `
-    <h1>Happy Birthday En Aaasaaa Pondatiiii ehhh!</h1>
-    <p>en thango porandha naal en bekka papa porandha naal...the born of the happy days of mine...happy birthday di en bekka veh..im soo lucky to have you...you are the bestesttttt wife, girlfriend..im soo happy to have you...kandipa unna idhey maaari last vara bathrama happy aa paathupen.</p>
+    <h1>Happy Birthday</h1>
+    <p>wish you a wonderful life ahead.</p>
   `;
   document.body.appendChild(message);
 }
 
 (function () { 
   let now = new Date();
-  let tenSecondsLater = new Date(now.getTime() + 10 * 1000); // 10 seconds from now
+  let tenSecondsLater = new Date(now.getTime() + 10 * 1000); 
   countdown(tenSecondsLater); 
 }());
